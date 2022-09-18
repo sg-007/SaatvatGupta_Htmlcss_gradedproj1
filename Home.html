@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="Pharmacy.css">
+</head>
+
+<body>
+    <section id="main">
+        <header class="head">
+            <nav id="navbar">
+                <div class="heading">
+                    <h1 class="headText">Pharmacy</h1>
+                </div>
+                <ul class="nav">
+                    <li>Home</li>
+                    <li class="downHover">Our Medicines
+                        <div class="dropDownMenu">
+                            <ul>
+                                <li>Fever</li>
+                                <li>Muscle Pains</li>
+                                <li>Cold and Cough</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="downHover">Health Care
+                        <div class="dropDownMenu">
+                            <ul>
+                                <li>Baby Care</li>
+                                <li>Skin Care</li>
+                                <li>Home Care</li>
+                                <li>Personal Care</li>
+                                <li>Pet Care</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Lab-Test.html">Lab Test</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="HTML CSS - Images\Images\Animation\ani1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="HTML CSS - Images\Images\Animation\ani2.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="HTML CSS - Images\Images\Animation\ani3.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="HTML CSS - Images\Images\Animation\ani4.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="HTML CSS - Images\Images\Animation\ani5.jpg">
+            </div>
+
+        </div>
+
+        <h2 class="text">Covid Care</h2>
+        <section id="products">
+            <div class="pro-container">
+                <div class="product">
+                    <h4>Covid Test Kit</h4>
+                    <img src="HTML CSS - Images\Images\Products\c1.jpg">
+                    <div class="des">
+                        <h5>Rs. 40</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Covid Essentials</h4>
+                    <img src="HTML CSS - Images\Images\Products\c2.jpg">
+                    <div class="des">
+                        <h5>Rs. 240</h5>
+                        <h5>Offer: Rs. 170/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Sanitizer Bottle</h4>
+                    <img src="HTML CSS - Images\Images\Products\c3.jpg">
+                    <div class="des">
+                        <h5>Rs. 99</h5>
+                        <h5>Offer: Rs. 87/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Mask</h4>
+                    <img src="HTML CSS - Images\Images\Products\c4.jpg">
+                    <div class="des">
+                        <h5>Rs. 45</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+                
+            </div>
+
+            <h2 class="text">Diabetes Care</h2>
+
+            <div class="pro-container">
+                <div class="product">
+                    <h4>Medicine</h4>
+                    <img src="HTML CSS - Images\Images\Products\d1.jpg">
+                    <div class="des">
+                        <h5>Rs. 45</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Chyawanprash</h4>
+                    <img src="HTML CSS - Images\Images\Products\d2.jpg">
+                    <div class="des">
+                        <h5>Rs. 45</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Toothpaste</h4>
+                    <img src="HTML CSS - Images\Images\Products\d3.jpg">
+                    <div class="des">
+                        <h5>Rs. 45</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+
+                <div class="product">
+                    <h4>Biscuits</h4>
+                    <img src="HTML CSS - Images\Images\Products\d4.png">
+                    <div class="des">
+                        <h5>Rs. 35</h5>
+                        <h5>Offer: Rs. 30/-</h5>
+                    </div>
+                        <button class="button">Add to cart</button>
+                </div>
+                
+            </div>
+            
+        </section>
+            
+        
+        <footer class="foot">
+            @copyright. Only for demonstration purposes
+        </footer>
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+
+</html>

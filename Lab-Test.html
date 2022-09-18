@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="Pharmacy.css">
+</head>
+
+<body>
+    <div class="grid">
+        <img src="HTML CSS - Images\Images\Lab-Test\lab-test.jpg" alt="Lab-Test">
+        <div class="form">
+            <h2 class="labtext">1. Your Contact Details</h2>
+            <form>
+                <input type="text" name="Full Name" placeholder="Full Name" />
+                <input type="number" name="Patient Id" placeholder="Patient Id if exists" />
+                <input type="number" name="Contact" placeholder="Contact Number" />
+                <input type="text" name="Email" placeholder="Email id" />
+
+            </form>
+
+            <h2>2. Address</h2>
+            <form>
+                <input type="text" name="House No." placeholder="H-No" />
+                <input type="text" name="Street" placeholder="Street" />
+                <input type="text" name="Area" placeholder="Area" />
+                <br><br>
+                <label for="district">District</label><br>
+                <select name="District" id="district">
+                    <option value="choose">Choose</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Belgaum">Belgaum</option>
+                    <option value="Udupi">Udupi</option>
+                    <option value="Whitefield">Whitefield</option>
+                </select>
+                <br>
+            </form>
+            <h2>3. Choose the Test Type*</h2>
+
+            <br>
+            <label class="container">CBC
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Complete Urine
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Lipid Profile
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Thyroid Stimulating Hormone(TSH)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Glucose Test
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <div class="info">*Check atleast one box without fail
+            </div>
+            <br>
+            <h2>4. Do you want a hard copy of the report also?</h2>
+            <br>
+            <form>
+                <label class="radio-inline">
+                    <input type="radio" name="radio" checked>Yes
+                </label>
+                <br>
+                <label class="radio-inline">
+                    <input type="radio" name="radio">No
+                </label>
+                <br>
+            </form>
+            <h2>5. Select your comfortable date and time</h2>                                                               
+            <form>
+                <label for="appointment">Appointment: </label>
+                <input type="datetime-local" id="appointment" name="appointment">
+            </form>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="lastbtns">Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="lastbtns">Submit</button>
+    </div>
+    
+</body>
+
+</html>
